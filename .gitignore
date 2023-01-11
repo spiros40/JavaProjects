@@ -44,7 +44,7 @@ hs_err_pid*
 *.zip
 *.tar.gz
 *.rar
-
+*nbproject
 # virtual machine crash logs
 hs_err_pid*
 replay_pid*

@@ -20,7 +20,7 @@ public class CalculateMarkov {
         double[][] multiplyArrayResult=null;
         //Gets the file path
         File file = new File(System.getProperty("user.home"), 
-                   "/Desktop/programming_projects/school/markovFilter/src/Data/measurements.txt");   
+                   "/Desktop/programming_projects/Java/JavaProjects/markovFilter/src/Data/measurements.txt");   
         //If the file exists continue the process otherwise throws an error alert message
              if (file.exists()) {                
                 try {
@@ -46,9 +46,9 @@ public class CalculateMarkov {
         return multiplyArrayResult;
     }
     
-    public double[][] multiplyArray(int[][]a, double[][] b,double[][] c) {
-        System.out.println(b[0][1]+"***"+ a[2][1]+"--"+c[0][0]);
-        return b;
+    public double[][] multiplyArray(int[][]measurement, double[][] probTransition,double[][] noiseProbability) {
+        System.out.println(probTransition[0][1]+"***"+ measurement[2][1]+"--"+noiseProbability[0][0]);
+        return probTransition;
     }
     
     
